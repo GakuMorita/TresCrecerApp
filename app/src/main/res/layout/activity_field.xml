@@ -15,7 +15,8 @@
         android:text="+"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <Button
         android:id="@+id/HPlusBtn"
@@ -26,7 +27,8 @@
         android:text="+"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/WMinusBtn" />
+        app:layout_constraintStart_toEndOf="@+id/WMinusBtn"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <Button
         android:id="@+id/WMinusBtn"
@@ -35,7 +37,8 @@
         android:text="-"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/WPlusBtn" />
+        app:layout_constraintStart_toEndOf="@+id/WPlusBtn"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/HMinusBtn"
@@ -48,7 +51,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toEndOf="@+id/HPlusBtn" />
+        app:layout_constraintStart_toEndOf="@+id/HPlusBtn"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView
         android:id="@+id/FieldHeight"
@@ -59,12 +63,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="H: m"
+        android:text="H:"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/FieldWidth"
@@ -75,9 +80,53 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="160dp"
-        android:text="W: m"
+        android:text="W:"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.gakumorita.trescrecerapp.NumericView
+        android:id="@+id/ValueHeight"
+        android:layout_width="92dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="45"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#7f7f7f"
+        android:textSize="26sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/FieldWidth"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.gakumorita.trescrecerapp.NumericView
+        android:id="@+id/ValueWidth"
+        android:layout_width="92dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="90"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#7f7f7f"
+        android:textSize="26sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/HPlusBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/FieldHeight"
+        app:layout_constraintTop_toBottomOf="@+id/ValueHeight"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="HardcodedText" />
 </android.support.constraint.ConstraintLayout>

@@ -2,8 +2,6 @@ package com.gakumorita.trescrecerapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
-
 
 public class FieldActivity extends AppCompatActivity {
 
@@ -12,6 +10,4 @@ public class FieldActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_field);
     }
-
-
 }
